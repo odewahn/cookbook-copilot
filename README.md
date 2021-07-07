@@ -2,7 +2,7 @@ O'Reilly Cookbooks provide practical solutions for common programming problems. 
 
 To test it, I first cloned the source content for the cookbooks from our internal GitLab repo. The files are usually in [AsciiDoc](https://asciidoc.org/) format, so I wrote a script to pull out problem solution and convert it into a "seed" program for Copilot.
 
-The seed has two parts. The first part consists of a comment generated from the recipes' problem statement and a function declaration. (Copilot is great at generating contained functions!). Copilot can use the comment to generate a working function that solves the problem. Next, I added a print statement that only says "Print test value for <recipe title>". Copilot can then generate a number of statements that will print the function for various values it selects.
+The seed has two parts. The first part consists of a comment generated from the recipes' problem statement and a function declaration. (Copilot is great at generating contained functions!). Copilot can use the comment to generate a working function that solves the problem. Next, I added a print statement that only says "Print test value for <recipe title>". Copilot can then generate a number of statements that will print the function for various values it selects. (Note that it's able to do all this just by "understanding" the content of the print statement, which is pretty cool.)
 
 For example, here's the Copilot seed for a recipe called "Converting a Decimal to a Hexadecimal Value" from [The JavaScript Cookbook](https://learning.oreilly.com/library/view/javascript-cookbook/9781449390211/):
 
@@ -26,7 +26,7 @@ function
 console.log("Print test value for Converting Between Degrees and Radians")
 ```
 
-Once I had the seeds for a few recipes, I could plug it into VSCode and let Copilot got to work. For example, here's what it generated to convert a number to hexadecimal:
+Once I had the seeds for a few recipes, I could plug it into VSCode and let Copilot go to work. For example, here's what it generated to convert a number to hexadecimal:
 
 ```
 /*
