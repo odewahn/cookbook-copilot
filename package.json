@@ -1,0 +1,11 @@
+{
+  "version": "0.1",
+  "description": "Make a copilot friendly version of a cookbook",
+  "author": "Andrew Odewahn",
+  "license": "MIT",
+  "dependencies": {
+    "asciidoctor": "^2.0.3",
+    "minimist": "^1.2.0",
+    "turndown": "^5.0.3"
+  }
+}
