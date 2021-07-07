@@ -55,6 +55,7 @@ data
         .slice(-2)
         .join("-");
       var title_slug = slugify(recipe.title.toLowerCase());
+      /*
       var filename =
         cookbookName +
         "-" +
@@ -63,6 +64,8 @@ data
         title_slug +
         "." +
         functionKeyword[4];
+      */
+      var filename = title_slug + "." + functionKeyword[4];
       console.log("filename is", filename);
 
       var problem = recipe.blocks[0];
@@ -74,6 +77,7 @@ data
       var markdown = turndownService.turndown(problem.getContent());
       var output = `
 ${functionKeyword[1]}
+${cookbookName}
 ${markdown}
 ${functionKeyword[2]}
 ${functionKeyword[0]} 

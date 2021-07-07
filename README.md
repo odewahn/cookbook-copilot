@@ -14,6 +14,7 @@ For example, here's the Copilot seed for a recipe called "Converting a Decimal t
 
 ```
 /*
+javascript-cookbook-2e-ch01
 You have a decimal value, and need to find its hexadecimal equivalent.
 */
 function
@@ -25,6 +26,7 @@ Here's the seed for "Converting Between Degrees and Radians":
 
 ```
 /*
+javascript-cookbook-2e-ch01
 You have an angle in degrees. To use the value in the Math object’s trigonometric functions, you need to convert the degrees to radians.
 */
 function
@@ -36,6 +38,7 @@ Once I had the seeds for a few recipes, I could plug it into VSCode and let Copi
 
 ```
 /*
+javascript-cookbook-2e-ch01
 You have a decimal value, and need to find its hexadecimal equivalent.
 */
 function toHex(d) {
@@ -92,6 +95,7 @@ And here's Copilot's solution:
 
 ```
 """
+javascript-cookbook-2e-ch01
 You have a decimal value, and need to find its hexadecimal equivalent.
 """
 
