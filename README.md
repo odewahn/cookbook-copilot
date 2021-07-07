@@ -1,4 +1,10 @@
-O'Reilly Cookbooks provide practical solutions for common programming problems. For exabple, how to format a date in JavaScript, how to enumerate a list in Python, or how to calculate the Fibonacci serries in Go. Chapters in a cookbook consist of groups of recipes that all address common themes, such as string handling or dates. Each recipe begins with a general description of the problem, a solution, and then a discussion section. We were wondering how [GitHub Copilot](https://copilot.github.com/) would do in solving some of these problems.
+O'Reilly Cookbooks provide practical solutions for common programming problems. For example, how to format a date in JavaScript, how to enumerate a list in Python, or how to calculate the Fibonacci serries in Go.
+
+Chapters in a cookbook consist of groups of recipes that all address common themes, such as string handling or dates. Each recipe begins with a general description of the problem, a proposed solution, and then a discussion about the tradeoffs involved.
+
+We were wondering how [GitHub Copilot](https://copilot.github.com/) would do in solving some of these problems.
+
+## Generating Copilot seed programs for a recipe
 
 To test it, I first cloned the source content for the cookbooks from our internal GitLab repo. The files are usually in [AsciiDoc](https://asciidoc.org/) format, so I wrote a script to pull out problem solution and convert it into a "seed" program for Copilot.
 
@@ -70,3 +76,46 @@ Not too shabby!
 Here's a video of the process in action:
 
 https://drive.google.com/file/d/1cjTtfFVPoq2-4QuafA3VOimvS2q88XY-/view?usp=sharing
+
+The script can generate seeds for JavaScript, Python, Go, and Java. For example, here's the seed for the same recipe, but in Python:
+
+```
+"""
+You have a decimal value, and need to find its hexadecimal equivalent.
+"""
+def
+
+print("Print test value for Converting a Decimal to a Hexadecimal Value")
+```
+
+And here's Copilot's solution:
+
+```
+"""
+You have a decimal value, and need to find its hexadecimal equivalent.
+"""
+
+def decimal_to_hexadecimal(decimal_value):
+    hexadecimal_value = hex(decimal_value)[2:]
+    return hexadecimal_value
+
+
+print("Print test value for Converting a Decimal to a Hexadecimal Value")
+print(decimal_to_hexadecimal(10))
+print(decimal_to_hexadecimal(15))
+print(decimal_to_hexadecimal(255))
+print(decimal_to_hexadecimal(256))
+print(decimal_to_hexadecimal(2560))
+```
+
+Running the program shows Copilot nailed this one:
+
+```
+python javascript-cookbook-2e-ch01-recipe-014-converting-a-decimal-to-a-hexadecimal-value.py
+Print test value for Converting a Decimal to a Hexadecimal Value
+a
+f
+ff
+100
+a00
+```
