@@ -1,3 +1,15 @@
+Converting a Decimal to a Hexadecimal Value
+
+```
+/*
+You have a decimal value, and need to find its hexadecimal equivalent.
+*/
+function
+
+console.log("Print test value for Converting a Decimal to a Hexadecimal Value")
+```
+
+```
 /*
 You have a decimal value, and need to find its hexadecimal equivalent.
 */
@@ -16,3 +28,4 @@ console.log(toHex(2));
 console.log(toHex(1));
 console.log(toHex(0));
 console.log(toHex(-1));
+```
