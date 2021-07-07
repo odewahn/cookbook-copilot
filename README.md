@@ -34,7 +34,11 @@ function
 console.log("Print test value for Converting Between Degrees and Radians")
 ```
 
-Once I had the seeds for a few recipes, I could plug it into VSCode and let Copilot go to work. For example, here's what it generated to convert a number to hexadecimal:
+Once I had the seeds for a few recipes, I could plug it into VSCode and let Copilot go to work. Here's a video of the process in action:
+
+https://drive.google.com/file/d/1cjTtfFVPoq2-4QuafA3VOimvS2q88XY-/view?usp=sharing
+
+For example, here's what it generated to convert a number to hexadecimal:
 
 ```
 /*
@@ -58,7 +62,7 @@ console.log(toHex(0));
 console.log(toHex(-1));
 ```
 
-What's cool is you can then run the programs it generates from the seed to see if it got the correct answer:
+What's cool is you can then run the program it generates to see if it got the correct answer:
 
 ```
 odewahn@BOSMAC06394 out % node javascript-cookbook-2e-ch01-recipe-014-converting-a-decimal-to-a-hexadecimal-value.js
@@ -73,12 +77,6 @@ ff
 00
 -1
 ```
-
-Not too shabby!
-
-Here's a video of the process in action:
-
-https://drive.google.com/file/d/1cjTtfFVPoq2-4QuafA3VOimvS2q88XY-/view?usp=sharing
 
 The script can generate seeds for JavaScript, Python, Go, and Java. For example, here's the seed for the same recipe, but in Python:
 
@@ -112,7 +110,7 @@ print(decimal_to_hexadecimal(256))
 print(decimal_to_hexadecimal(2560))
 ```
 
-Running the program shows Copilot nailed this one:
+Running the program shows Copilot nailed this one, as well:
 
 ```
 python javascript-cookbook-2e-ch01-recipe-014-converting-a-decimal-to-a-hexadecimal-value.py
