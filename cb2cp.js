@@ -55,18 +55,10 @@ data
         .slice(-2)
         .join("-");
       var title_slug = slugify(recipe.title.toLowerCase());
-      /*
-      var filename =
-        cookbookName +
-        "-" +
-        recipe_number +
-        "-" +
-        title_slug +
-        "." +
-        functionKeyword[4];
-      */
-      var filename = title_slug + "." + functionKeyword[4];
-      console.log("filename is", filename);
+
+      var filename = title_slug;
+      var extension = functionKeyword[4];
+      console.log("filename is", filename + "." + extension);
 
       var problem = recipe.blocks[0];
       // Convert the selected recipe to markdown
@@ -74,6 +66,24 @@ data
         codeBlockStyle: "fenced",
         preformattedCode: true,
       });
+
+      // By default, cookbook recipes are level 4
+      // This rule makes them level 1 as standalone markdown files
+      // so that it renders better
+      turndownService.addRule("h4", {
+        filter: ["h4"],
+        replacement: (c) => {
+          return "# " + c;
+        },
+      });
+
+      // Try outputting the markdown for the recipe
+
+      var md = turndownService.turndown(recipe.getContent());
+      fs.writeFile("./seeds/" + filename + ".md", md, (err) => {
+        if (err) throw err;
+      });
+
       var markdown = turndownService.turndown(problem.getContent());
       var output = `
 ${functionKeyword[1]}
@@ -84,7 +94,7 @@ ${functionKeyword[0]}
 
 ${functionKeyword[3]}(\"Print test value for ${recipe.title}\")`;
 
-      fs.writeFile("./seeds/" + filename, output, (err) => {
+      fs.writeFile("./seeds/" + filename + "." + extension, output, (err) => {
         // In case of a error throw err.
         if (err) throw err;
       });
