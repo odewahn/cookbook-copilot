@@ -1,6 +1,5 @@
 
 """
-javascript-cookbook-2e-ch01
 People toss around terms like 'object', 'primitive', and 'literal'. What is the difference between the three, and how can you tell which is which?
 """
 def 

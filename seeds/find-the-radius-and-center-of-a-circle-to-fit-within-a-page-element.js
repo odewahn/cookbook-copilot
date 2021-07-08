@@ -1,6 +1,5 @@
 
 /*
-javascript-cookbook-2e-ch01
 Given the width and height of a page element, you need to find the center and radius of the largest circle that fits within that page element.
 */
 function 

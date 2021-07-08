@@ -1,6 +1,5 @@
 
 """
-python-cookbook-3e-chapter_5_files
 You want to output data using `print()`, but you also want to change the separator character or line ending.
 """
 def 

@@ -1,6 +1,5 @@
 
 """
-javascript-cookbook-2e-ch01
 You want to sum all numbers in a table column.
 """
 def 

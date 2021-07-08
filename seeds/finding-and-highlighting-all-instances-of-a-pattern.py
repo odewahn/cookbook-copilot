@@ -1,6 +1,5 @@
 
 """
-javascript-cookbook-2e-ch01
 You want to find all instances of a pattern within a string.
 """
 def 

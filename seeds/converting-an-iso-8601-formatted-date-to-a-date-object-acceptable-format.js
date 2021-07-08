@@ -1,6 +1,5 @@
 
 /*
-javascript-cookbook-2e-ch01
 You need to convert an ISO 8601 formatted date string into values that can be used to create a new Date object instance.
 */
 function 

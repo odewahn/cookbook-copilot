@@ -1,6 +1,5 @@
 
 """
-javascript-cookbook-2e-ch01
 You want to replace all matched substrings with a new substring.
 """
 def 

@@ -1,6 +1,5 @@
 
 """
-python-cookbook-3e-chapter_5_files
 You want to write data to a file, but only if it doesn’t already exist on the filesystem.
 """
 def 

@@ -1,6 +1,5 @@
 
 """
-javascript-cookbook-2e-ch01
 You have a string with several sentences, one of which includes a list of items. The list begins with a colon (:) and ends with a period (.), and each item is separated by a comma. You want to extract just the list.
 
 Before:

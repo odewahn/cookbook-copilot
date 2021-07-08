@@ -87,7 +87,6 @@ data
       var markdown = turndownService.turndown(problem.getContent());
       var output = `
 ${functionKeyword[1]}
-${cookbookName}
 ${markdown}
 ${functionKeyword[2]}
 ${functionKeyword[0]} 
