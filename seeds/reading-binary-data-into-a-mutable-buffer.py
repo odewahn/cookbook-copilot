@@ -1,7 +1,0 @@
-
-"""
-You want to read binary data directly into a mutable buffer without any intermediate copying. Perhaps you want to mutate the data in-place and write it back out to a file.
-"""
-def 
-
-print("Print test value for Reading Binary Data into a Mutable Buffer")
